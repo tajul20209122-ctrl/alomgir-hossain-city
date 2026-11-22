@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#147a45"><title>আলমগীর হোসেন সিটি ফ্রেশ শাকসবজি</title>
+<style>
+:root{--g:#147a45;--g2:#20a45c;--ink:#172b21;--muted:#68776e;--bg:#f4f8f5;--line:#e2ebe5;--blue:#245bb5}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,"Noto Sans Bengali",sans-serif}
+header{background:linear-gradient(130deg,#0f6338,#22a45c);color:#fff;padding:18px 15px 23px;border-radius:0 0 23px 23px}
+.wrap{max-width:1050px;margin:auto;padding:0 14px}.head{display:flex;justify-content:space-between;align-items:center;gap:10px}.brand{font-size:22px;font-weight:850}.tag{font-size:12px;opacity:.9;margin-top:3px}
+main{max-width:1050px;margin:18px auto;padding:0 14px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.nav button,.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:750;cursor:pointer}.nav button{background:#fff;color:var(--g)}.nav button.active,.primary{background:var(--g);color:#fff}.secondary{background:#eaf5ee;color:var(--g)}.danger{background:#fff0ee;color:#b42318}.blue{background:#eaf1ff;color:#245bb5}
+.panel,.welcome{background:#fff;padding:16px;border-radius:16px;margin:13px 0;box-shadow:0 3px 13px #102b1c0b}.welcome h2,.panel h2{font-size:19px;margin:0 0 10px}.muted,.small{color:var(--muted);font-size:13px}.search{margin:13px 0}.search input,input,select,textarea{font:inherit;border:1px solid #d8e3dc;border-radius:10px;padding:11px;background:#fff;min-width:0}input,select,textarea{width:100%}.search input{width:100%}.cats{display:flex;gap:8px;overflow:auto;margin:12px 0}.cat{white-space:nowrap;border:0;border-radius:22px;padding:9px 14px;background:#fff;color:var(--g);font-weight:700}.cat.active{background:var(--g);color:white}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#products.grid{display:flex;flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;gap:12px;padding:2px 2px 12px;scrollbar-width:thin;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+#products .product{flex:0 0 165px;min-width:165px;scroll-snap-align:start}
+#products::-webkit-scrollbar{height:7px}
+#products::-webkit-scrollbar-thumb{background:#9ab9a4;border-radius:10px}
+#productManageShelf{display:flex;flex-wrap:nowrap;gap:10px;overflow-x:auto;overflow-y:hidden;padding:4px 2px 12px;scrollbar-width:thin;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+#productManageShelf .manage-product{flex:0 0 190px;min-width:190px;background:#f7fbf8;border:1px solid var(--line);border-radius:12px;padding:11px;scroll-snap-align:start}
+#productManageShelf .manage-product .manage-actions{display:flex;gap:6px;margin-top:10px}
+#productManageShelf .manage-product .manage-actions button{flex:1;padding:8px 6px;font-size:12px}
+#productManageShelf::-webkit-scrollbar{height:7px}
+#productManageShelf::-webkit-scrollbar-thumb{background:#9ab9a4;border-radius:10px}
+.due-card{border:1px solid var(--line);border-radius:13px;padding:12px;margin:10px 0;background:#fbfdfb}
+.due-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:10px 0}
+.due-metric{background:#eef7f0;border-radius:9px;padding:8px;text-align:center}
+.due-metric b{display:block;color:var(--g);font-size:15px}
+.due-form{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.due-form .full{grid-column:1/-1}
+.due-history{font-size:12px;color:var(--muted);margin-top:8px}
+
+
+@media(min-width:650px){#products .product{flex-basis:210px;min-width:210px}}.product{background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 3px 13px #102b1c0b}.photo{height:125px;background:#e8f3eb;display:flex;align-items:center;justify-content:center;font-size:46px}.photo img{width:100%;height:100%;object-fit:cover}.product-icon{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:64px;background:linear-gradient(135deg,#edf8ef,#dcefe1)}.pbody{padding:11px}.pname{font-weight:800}.price{color:var(--g);font-weight:850;margin:5px 0}.add{width:100%;border:0;background:var(--g);color:white;border-radius:10px;padding:10px;margin-top:8px;font-weight:750}
+.row{display:flex;justify-content:space-between;align-items:center;gap:9px;flex-wrap:wrap}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.full{grid-column:1/-1}label{display:block;font-size:13px;font-weight:700;margin:0 0 5px}.line{padding:11px 0;border-bottom:1px solid var(--line)}.line:last-child{border:0}.badge{display:inline-block;padding:4px 9px;border-radius:20px;background:#fff2d7;color:#885900;font-size:12px}.good{background:#e7f6ec;color:#116c3c}.hidden{display:none!important}.btn{cursor:pointer}.primary{width:100%;padding:12px}.statgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.stat{padding:13px;border-radius:13px;background:#eef7f0}.stat b{font-size:23px;display:block;color:var(--g)}.notice{position:fixed;bottom:15px;left:50%;transform:translateX(-50%);background:#163c29;color:white;border-radius:25px;padding:11px 16px;display:none;z-index:9;max-width:90%}footer{text-align:center;color:var(--muted);font-size:12px;padding:24px}
+@media(min-width:650px){.grid{grid-template-columns:repeat(4,minmax(0,1fr))}.photo{height:150px}.statgrid{grid-template-columns:repeat(4,1fr)}}
+</style></head>
+<body>
+<header><div class="wrap head"><div><div class="brand" id="brand">🥬 আলমগীর হোসেন সিটি ফ্রেশ শাকসবজি</div><div class="tag" id="shopTag">তাজা সবজি, ন্যায্য দাম — প্রতিদিন</div></div><span class="small" style="color:white">আলমগীর হোসেন সিটি ফ্রেশ শাকসবজি</span></div></header>
+<main>
+<div class="nav">
+<button id="customerTab" class="active" onclick="showView('customer')">🛍️ ক্রেতার পাতা</button>
+<button id="adminTab" onclick="showView('admin')">⚙️ দোকানদার</button>
+</div>
+<section id="customerView">
+<div class="welcome"><div class="row"><div><h2>আজকের তাজা সবজি 🥦</h2><div class="muted" id="today"></div></div><span class="badge good">আজকের তালিকা</span></div><p class="muted">সবজি ও মুদি দোকানের প্রয়োজনীয় পণ্য দেখে অর্ডার করুন।</p></div>
+<div class="search"><input id="search" placeholder="🔍 সবজি বা পণ্যের নাম খুঁজুন..." oninput="renderProducts()"><div class="row" style="margin-top:8px"><span class="small" id="productCount">পণ্য লোড হচ্ছে...</span><button class="btn secondary" type="button" onclick="refreshCustomerProducts()">↻ পণ্য রিফ্রেশ</button></div></div>
+<div class="cats"><button class="cat active" onclick="setCat('সব',this)">সব</button><button class="cat" onclick="setCat('সবজি',this)">সবজি</button><button class="cat" onclick="setCat('শাক',this)">শাক</button><button class="cat" onclick="setCat('ফল',this)">ফল</button><button class="cat" onclick="setCat('মুদি মাল',this)">মুদি মাল</button></div>
+<div class="small" style="margin:4px 0 8px;color:#147a45;font-weight:700">পণ্য দেখতে ডানে-বামে আঙুল দিয়ে সরান ⟷</div><div class="grid" id="products"></div>
+<div class="panel"><h2>🛒 আপনার অর্ডার</h2><div id="cart"><p class="muted">ঝুড়িতে কোনো সবজি নেই।</p></div><div class="row"><b>সর্বমোট</b><b id="cartTotal" style="color:var(--g)">৳০</b></div></div>
+<div class="panel"><h2>📍 অর্ডারের তথ্য</h2><div class="fields">
+<div><label>নাম *</label><input id="cName" placeholder="আপনার নাম"></div><div><label>মোবাইল *</label><input id="cPhone" inputmode="tel" placeholder="01XXXXXXXXX"></div>
+<div><label>বাসা / বাড়ি</label><input id="cHouse" placeholder="বাসার নাম/নম্বর"></div><div><label>প্লট</label><input id="cPlot" placeholder="প্লট নম্বর"></div>
+<div><label>তলা</label><input id="cFloor" placeholder="যেমন ৩য় তলা"></div><div><label>পেমেন্ট</label><select id="cPayment"><option>নগদ</option><option>বাকি চাই</option></select></div>
+<div class="full"><label>অতিরিক্ত নির্দেশনা</label><textarea id="cNote" rows="2" placeholder="ডেলিভারি সংক্রান্ত তথ্য"></textarea></div></div>
+<p class="muted">বাকি চাইলে দোকানদার যাচাই করে নিশ্চিত করবেন।</p><button class="btn primary" onclick="placeOrder()">অর্ডার জমা দিন</button></div>
+<div class="panel"><h2>📦 আমার অর্ডার</h2><p class="muted">অর্ডারের মোবাইল নম্বর দিয়ে অবস্থা দেখুন। ডেলিভারি পৌঁছালে রিসিভ নিশ্চিত করুন।</p><div class="row"><input id="trackPhone" placeholder="মোবাইল নম্বর" inputmode="tel" style="flex:1"><button class="btn secondary" onclick="trackOrders()">খুঁজুন</button></div><div id="tracking"></div></div>
+</section>
+<section id="adminView" class="hidden">
+<div id="loginPanel" class="panel"><h2>🔐 দোকানদার লগইন</h2><p class="muted">নিরাপদ Supabase অ্যাডমিন অ্যাকাউন্ট দিয়ে প্রবেশ করুন।<label>অ্যাডমিন ইমেইল</label><input id="adminEmail" type="email" autocomplete="username" placeholder="Supabase admin email"><label style="margin-top:9px">পাসওয়ার্ড</label><input id="adminPassword" type="password" autocomplete="current-password" placeholder="Supabase password"><button class="btn primary" style="margin-top:10px" onclick="login()">লগইন</button></div>
+<div id="dashboard" class="hidden">
+<div class="panel"><div class="row"><div><h2>দোকান ড্যাশবোর্ড</h2><div class="muted">দোকানের তথ্য ও অর্ডার পরিচালনা</div></div><button class="btn secondary" onclick="logout()">লগআউট</button></div>
+<div class="statgrid"><div class="stat">নতুন অর্ডার<b id="newCount">০</b></div><div class="stat">ডেলিভারি তালিকা<b id="deliveryCount">০</b></div><div class="stat">বাকি অর্ডার<b id="dueCount">০</b></div><div class="stat">রিসিভ নিশ্চিত<b id="receivedCount">০</b></div></div></div>
+<div class="panel"><h2>🏪 দোকানের তথ্য</h2><div class="fields"><div><label>দোকানের নাম</label><input id="shopNameInput"></div><div><label>ঠিকানা / ট্যাগলাইন</label><input id="shopAddressInput"></div></div><button class="btn primary" style="margin-top:10px" onclick="saveShop()">সংরক্ষণ</button></div>
+<div class="panel"><h2>➕ সবজি ও মুদি মাল যোগ / দাম আপডেট</h2><p class="muted">প্রাথমিক তালিকায় ১০০টির বেশি পণ্য আছে। ছবির জায়গায় পণ্যের পরিচিত আইকন দেখাবে; চাইলে নিজের আসল ছবি আপলোড করতে পারবেন। দামগুলো আনুমানিক, দোকানদার পরিবর্তন করতে পারবেন।</p><button class="btn secondary" style="width:100%;margin-bottom:12px" onclick="seedStarterCatalog()">📥 সব প্রাথমিক পণ্য অনলাইনে যোগ করুন</button><div class="fields"><div><label>সবজির নাম</label><input id="pName" placeholder="যেমন টমেটো"></div><div><label>বিভাগ</label><select id="pCat"><option>সবজি</option><option>শাক</option><option>ফল</option><option>মুদি মাল</option></select></div><div><label>দাম (টাকা)</label><input id="pPrice" type="number" min="0"></div><div><label>একক</label><select id="pUnit"><option>কেজি</option><option>গ্রাম</option><option>লিটার</option><option>পিস</option><option>প্যাকেট</option><option>বোতল</option><option>মোটা</option></select></div><div class="full"><label>ছবি তুলুন / নির্বাচন করুন</label><input id="pImage" type="file" accept="image/*" capture="environment"></div></div><button class="btn primary" style="margin-top:10px" onclick="saveProduct()">পণ্য সংরক্ষণ</button><div id="productManage"></div></div>
+<div class="panel"><h2>🧾 নতুন অর্ডার তালিকা</h2><p class="muted">ক্রেতা কী কী অর্ডার করেছে দেখুন। পাঠানোর সময় ডেলিভারি তালিকায় পাঠান।</p><div id="newOrders"></div></div>
+<div class="panel"><h2>🚚 ডেলিভারি তালিকা</h2><div id="deliveryOrders"></div></div>
+<div class="panel"><h2>📒 বাকি হিসাবের আলাদা তালিকা</h2><p class="muted">মোবাইল নম্বর দিয়ে খুঁজুন। বাকি অর্ডার, জমার তারিখ, মোট জমা ও অবশিষ্ট টাকা দেখা যাবে।</p><div class="row" style="margin:10px 0"><input id="duePhoneSearch" inputmode="tel" placeholder="ক্রেতার মোবাইল নম্বর লিখুন" oninput="filterDueLedgerView()" style="flex:1"><button class="btn secondary" onclick="clearDuePhoneSearch()">সব দেখুন</button></div><div id="dueOrders"></div></div>
+<div class="panel"><h2>⚙️ বাকি হিসাব চালু করার একবারের সেটআপ</h2><p class="muted">Supabase → SQL Editor-এ নিচের SQL একবার Run করুন। এতে বাকি জমার আলাদা অনলাইন টেবিল তৈরি হবে।</p><textarea id="dueSql" rows="12" readonly></textarea><button class="btn secondary" style="margin-top:8px" onclick="copyDueSql()">SQL কপি করুন</button></div>
+<div class="panel"><h2>🔐 অ্যাকাউন্ট নিরাপত্তা</h2><p class="muted">দোকানদারের প্রবেশ Supabase ইমেইল ও পাসওয়ার্ড দিয়ে নিয়ন্ত্রিত হয়। পাসওয়ার্ড কাউকে দেবেন না।</p></div>
+<div class="panel"><h2>💾 ডেটা ব্যাকআপ</h2><button class="btn secondary" onclick="backup()">ব্যাকআপ ডাউনলোড</button> <label class="btn secondary" style="display:inline-block">ব্যাকআপ ফেরত আনুন<input type="file" accept="application/json" style="display:none" onchange="restore(event)"></label></div>
+</div></section>
+</main><footer>Fresh Vegetable Shop · এক HTML ডেমো</footer><div id="notice" class="notice"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL="https://ubumllypunttwkpqnfis.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_CajCRDJZeknU0tNJf3Kshw_uzD8pe0r";
+const sbClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+let realtimeChannel=null;
+const DBKEY='freshVegSingleHtmlV2';
+
+const starterCatalog = [
+// সবজি: প্রাথমিক আনুমানিক খুচরা দাম (টাকা)
+['আলু','সবজি',35,'কেজি','🥔'],['পেঁয়াজ','সবজি',80,'কেজি','🧅'],['রসুন','সবজি',180,'কেজি','🧄'],['আদা','সবজি',220,'কেজি','🫚'],['টমেটো','সবজি',60,'কেজি','🍅'],['বেগুন','সবজি',60,'কেজি','🍆'],['লাউ','সবজি',55,'পিস','🥒'],['মিষ্টি কুমড়া','সবজি',45,'কেজি','🎃'],['চাল কুমড়া','সবজি',50,'পিস','🥬'],['পটল','সবজি',70,'কেজি','🥒'],['ঢেঁড়স','সবজি',65,'কেজি','🌶️'],['শসা','সবজি',50,'কেজি','🥒'],['করলা','সবজি',80,'কেজি','🥒'],['ঝিঙা','সবজি',65,'কেজি','🥒'],['ধুন্দুল','সবজি',60,'কেজি','🥒'],['চিচিঙ্গা','সবজি',65,'কেজি','🥒'],['কাঁকরোল','সবজি',90,'কেজি','🥒'],['কাঁচা মরিচ','সবজি',120,'কেজি','🌶️'],['মুলা','সবজি',35,'কেজি','🥕'],['গাজর','সবজি',70,'কেজি','🥕'],['ফুলকপি','সবজি',45,'পিস','🥦'],['বাঁধাকপি','সবজি',40,'পিস','🥬'],['শিম','সবজি',70,'কেজি','🫛'],['বরবটি','সবজি',80,'কেজি','🫛'],['কাঁচা পেঁপে','সবজি',35,'কেজি','🥭'],['কাঁচা কলা','সবজি',40,'হালি','🍌'],['মিষ্টি আলু','সবজি',45,'কেজি','🍠'],['ক্যাপসিকাম','সবজি',180,'কেজি','🫑'],['লেবু','সবজি',10,'পিস','🍋'],['ধনেপাতা','সবজি',15,'মোড়া','🌿'],
+// শাক
+['লাল শাক','শাক',20,'আঁটি','🥬'],['ডাঁটা শাক','শাক',20,'আঁটি','🥬'],['পালং শাক','শাক',25,'আঁটি','🥬'],['পুঁই শাক','শাক',25,'আঁটি','🌿'],['কলমি শাক','শাক',15,'আঁটি','🌿'],['লাউ শাক','শাক',25,'আঁটি','🌿'],['কুমড়া শাক','শাক',25,'আঁটি','🌿'],['মুলা শাক','শাক',20,'আঁটি','🥬'],['সরিষা শাক','শাক',25,'আঁটি','🌿'],['মেথি শাক','শাক',25,'আঁটি','🌿'],['পাট শাক','শাক',20,'আঁটি','🌿'],['নটে শাক','শাক',20,'আঁটি','🥬'],['হেলেঞ্চা শাক','শাক',20,'আঁটি','🌿'],['থানকুনি পাতা','শাক',15,'মোড়া','🍃'],['পুদিনা পাতা','শাক',20,'মোড়া','🌿'],['কচু শাক','শাক',25,'আঁটি','🍃'],['সরিষা পাতা','শাক',25,'আঁটি','🌿'],['পেঁয়াজ পাতা','শাক',25,'মোড়া','🌱'],
+// ফল
+['আম','ফল',100,'কেজি','🥭'],['কাঁঠাল','ফল',80,'পিস','🍈'],['লিচু','ফল',180,'কেজি','🍒'],['কলা','ফল',60,'ডজন','🍌'],['পেয়ারা','ফল',70,'কেজি','🍐'],['পাকা পেঁপে','ফল',60,'কেজি','🍈'],['আপেল','ফল',280,'কেজি','🍎'],['কমলা','ফল',220,'কেজি','🍊'],['মাল্টা','ফল',220,'কেজি','🍊'],['আনারস','ফল',40,'পিস','🍍'],['তরমুজ','ফল',35,'কেজি','🍉'],['বাঙ্গি','ফল',45,'কেজি','🍈'],['আঙুর','ফল',350,'কেজি','🍇'],['ডালিম','ফল',350,'কেজি','🍎'],['ডাব','ফল',80,'পিস','🥥'],['নারকেল','ফল',100,'পিস','🥥'],['জাম','ফল',160,'কেজি','🫐'],['কুল','ফল',100,'কেজি','🍏'],['আমড়া','ফল',70,'কেজি','🍏'],['জাম্বুরা','ফল',60,'পিস','🍈'],['নাশপাতি','ফল',300,'কেজি','🍐'],['খেজুর','ফল',350,'কেজি','🌴'],['সফেদা','ফল',100,'কেজি','🥔'],['বেল','ফল',50,'পিস','🍈'],['ড্রাগন ফল','ফল',350,'কেজি','🐉'],['স্ট্রবেরি','ফল',600,'কেজি','🍓'],
+// মুদি মাল
+['চাল (মিনিকেট)','মুদি মাল',75,'কেজি','🍚'],['চাল (নাজিরশাইল)','মুদি মাল',80,'কেজি','🍚'],['আটা','মুদি মাল',55,'কেজি','🌾'],['ময়দা','মুদি মাল',65,'কেজি','🌾'],['সুজি','মুদি মাল',70,'কেজি','🥣'],['মসুর ডাল','মুদি মাল',130,'কেজি','🫘'],['মুগ ডাল','মুদি মাল',160,'কেজি','🫘'],['ছোলা','মুদি মাল',100,'কেজি','🫘'],['বুটের ডাল','মুদি মাল',110,'কেজি','🫘'],['চিনি','মুদি মাল',135,'কেজি','🧂'],['লবণ','মুদি মাল',40,'কেজি','🧂'],['সয়াবিন তেল','মুদি মাল',175,'লিটার','🫗'],['সরিষার তেল','মুদি মাল',260,'লিটার','🫗'],['ঘি','মুদি মাল',250,'কৌটা','🧈'],['হলুদ গুঁড়া','মুদি মাল',35,'প্যাকেট','🟡'],['মরিচ গুঁড়া','মুদি মাল',45,'প্যাকেট','🌶️'],['ধনিয়া গুঁড়া','মুদি মাল',35,'প্যাকেট','🟤'],['জিরা','মুদি মাল',600,'কেজি','🌰'],['গরম মসলা','মুদি মাল',50,'প্যাকেট','🧂'],['তেজপাতা','মুদি মাল',20,'প্যাকেট','🍃'],['দারুচিনি','মুদি মাল',500,'কেজি','🪵'],['এলাচ','মুদি মাল',2200,'কেজি','🌿'],['চা পাতা','মুদি মাল',120,'প্যাকেট','🍵'],['কফি','মুদি মাল',180,'প্যাকেট','☕'],['বিস্কুট','মুদি মাল',20,'প্যাকেট','🍪'],['নুডলস','মুদি মাল',25,'প্যাকেট','🍜'],['সেমাই','মুদি মাল',60,'প্যাকেট','🍝'],['দুধ','মুদি মাল',35,'প্যাকেট','🥛'],['গুঁড়া দুধ','মুদি মাল',450,'প্যাকেট','🥛'],['ডিম','মুদি মাল',14,'পিস','🥚'],['পাউরুটি','মুদি মাল',50,'পিস','🍞'],['টমেটো সস','মুদি মাল',90,'বোতল','🍅'],['সয়াসস','মুদি মাল',80,'বোতল','🫙'],['চানাচুর','মুদি মাল',20,'প্যাকেট','🥨'],['চিপস','মুদি মাল',20,'প্যাকেট','🍟'],['চকলেট','মুদি মাল',20,'পিস','🍫'],['মধু','মুদি মাল',250,'বোতল','🍯'],['সুপ','মুদি মাল',45,'প্যাকেট','🥣'],['পাস্তা','মুদি মাল',70,'প্যাকেট','🍝'],['কর্নফ্লেক্স','মুদি মাল',220,'প্যাকেট','🥣'],
+// নিত্যপ্রয়োজনীয়
+['গোসলের সাবান','মুদি মাল',55,'পিস','🧼'],['শ্যাম্পু','মুদি মাল',5,'স্যাশে','🧴'],['টুথপেস্ট','মুদি মাল',100,'পিস','🪥'],['টুথব্রাশ','মুদি মাল',40,'পিস','🪥'],['ডিটারজেন্ট পাউডার','মুদি মাল',60,'প্যাকেট','🧺'],['ডিশওয়াশ লিকুইড','মুদি মাল',90,'বোতল','🧽'],['টিস্যু','মুদি মাল',30,'প্যাকেট','🧻'],['মশার কয়েল','মুদি মাল',70,'প্যাকেট','🦟'],['হ্যান্ডওয়াশ','মুদি মাল',100,'বোতল','🧴'],['টয়লেট ক্লিনার','মুদি মাল',120,'বোতল','🧴'],['ফ্লোর ক্লিনার','মুদি মাল',110,'বোতল','🧹'],['বেবি ডায়াপার','মুদি মাল',20,'পিস','🧷'],['ম্যাচের কাঠি','মুদি মাল',10,'বক্স','🔥']
+].map(([name,category,price,unit,icon])=>({name,category,price,unit,icon}));
+
+const starter=[{id:1,name:'আলু',cat:'সবজি',price:40,unit:'কেজি',emoji:'🥔'},{id:2,name:'টমেটো',cat:'সবজি',price:60,unit:'কেজি',emoji:'🍅'},{id:3,name:'লাল শাক',cat:'শাক',price:25,unit:'মোটা',emoji:'🥬'},{id:4,name:'লাউ',cat:'সবজি',price:50,unit:'পিস',emoji:'🥒'},{id:5,name:'বেগুন',cat:'সবজি',price:45,unit:'কেজি',emoji:'🍆'},{id:6,name:'কাঁচা মরিচ',cat:'সবজি',price:80,unit:'কেজি',emoji:'🌶️'}];
+let db=JSON.parse(localStorage.getItem(DBKEY)||'null')||{shop:'আলমগীর হোসেন সিটি ফ্রেশ শাকসবজি',address:'তাজা সবজি, ন্যায্য দাম — প্রতিদিন',products:[],orders:[]};
+let cart=[],category='সব',logged=false;
+const $=id=>document.getElementById(id);
+function save(){localStorage.setItem(DBKEY,JSON.stringify(db))}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function taka(n){return '৳'+Number(n||0).toLocaleString('bn-BD',{maximumFractionDigits:2})}
+function toast(s){$('notice').textContent=s;$('notice').style.display='block';clearTimeout(window._toastTimer);window._toastTimer=setTimeout(()=>$('notice').style.display='none',3500)}
+function showView(v){$('customerView').classList.toggle('hidden',v!=='customer');$('adminView').classList.toggle('hidden',v!=='admin');$('customerTab').classList.toggle('active',v==='customer');$('adminTab').classList.toggle('active',v==='admin');if(v==='admin'&&logged)renderAdmin();window.scrollTo(0,0)}
+function setCat(c,b){category=c;document.querySelectorAll('.cat').forEach(x=>x.classList.remove('active'));b.classList.add('active');renderProducts()}
+function renderProducts(){let q=$('search').value.trim().toLowerCase();let arr=db.products.filter(p=>(category==='সব'||p.cat===category)&&p.name.toLowerCase().includes(q));$('productCount').textContent='দেখানো হচ্ছে '+arr.length.toLocaleString('bn-BD')+'টি পণ্য';$('products').innerHTML=arr.map(p=>`<article class="product"><div class="photo">${p.image?`<img src="${p.image}" alt="${esc(p.name)}">`:`<span class="product-icon">${p.emoji||'🥬'}</span>`}</div><div class="pbody"><div class="pname">${esc(p.name)}</div><div class="price">${taka(p.price)} / ${esc(p.unit)}</div><div class="small">আজকের দাম</div><button class="add" onclick="addCart('${esc(String(p.id))}')">+ অর্ডারে যোগ</button></div></article>`).join('')||'<p class="muted">পণ্য তালিকা খালি। দোকানদার পণ্য যোগ করলে এখানে দেখা যাবে।</p>'}
+async function refreshCustomerProducts(){ $('productCount').textContent='পণ্য আপডেট হচ্ছে...'; await loadCloudProducts(); toast('সর্বশেষ পণ্যের তালিকা আপডেট হয়েছে'); }
+function addCart(id){let p=db.products.find(x=>String(x.id)===String(id));if(!p)return toast('পণ্য পাওয়া যায়নি; তালিকা রিফ্রেশ করে আবার চেষ্টা করুন');let old=cart.find(x=>String(x.id)===String(id));if(old)old.qty+=1;else cart.push({...p,qty:1});renderCart();toast(p.name+' যোগ হয়েছে')}
+function renderCart(){$('cart').innerHTML=cart.length?cart.map((p,i)=>`<div class="line row"><span><b>${esc(p.name)}</b><div class="small">${taka(p.price)} / ${esc(p.unit)}</div></span><span class="row"><input aria-label="পরিমাণ" type="number" min=".1" step=".1" value="${p.qty}" style="width:76px" onchange="setQty(${i},this.value)"><button class="btn danger" onclick="removeCart(${i})">বাদ</button></span><b>${taka(p.qty*p.price)}</b></div>`).join(''):'<p class="muted">ঝুড়িতে কোনো সবজি নেই।</p>';$('cartTotal').textContent=taka(cart.reduce((s,p)=>s+p.qty*p.price,0))}
+function setQty(i,v){let n=Number(v);if(n>0)cart[i].qty=n;else cart.splice(i,1);renderCart()}
+function removeCart(i){cart.splice(i,1);renderCart()}
+async function placeOrder(){
+  let name=$('cName').value.trim(),phone=$('cPhone').value.trim();
+  if(!cart.length)return toast('আগে পণ্য নির্বাচন করুন');
+  if(!name||!phone)return toast('নাম ও মোবাইল নম্বর দিন');
+  if(!/^01[0-9]{9}$/.test(phone.replace(/[\s-]/g,'')))return toast('সঠিক ১১ সংখ্যার মোবাইল নম্বর দিন');
+  const cleanPhone=phone.replace(/[\s-]/g,'');
+  const total=cart.reduce((s,p)=>s+p.qty*p.price,0);
+  const items=cart.map(p=>({product_name:p.name,quantity:p.qty,unit:p.unit,price:p.price}));
+  const {data:orderId,error}=await sbClient.rpc('place_customer_order',{p_customer_name:name,p_phone:cleanPhone,p_house:$('cHouse').value.trim(),p_plot:$('cPlot').value.trim(),p_floor:$('cFloor').value.trim(),p_payment:$('cPayment').value,p_note:$('cNote').value.trim(),p_total:total,p_items:items});
+  if(error){console.error(error);return toast('অর্ডার জমা হয়নি: '+error.message)}
+  const sentPhone=cleanPhone;cart=[];renderCart();$('trackPhone').value=sentPhone;$('cName').value='';$('cPhone').value='';$('cHouse').value='';$('cPlot').value='';$('cFloor').value='';$('cNote').value='';
+  toast('অর্ডার অনলাইনে জমা হয়েছে। অর্ডার নম্বর: '+orderId);trackOrders();
+}
+async function trackOrders(){let phone=$('trackPhone').value.trim().replace(/[\s-]/g,'');if(!phone)return toast('মোবাইল নম্বর দিন');const {data,error}=await sbClient.rpc('track_orders',{p_phone:phone});if(error){console.error(error);return toast('অর্ডার খুঁজতে সমস্যা: '+error.message)}const list=Array.isArray(data)?data:[];$('tracking').innerHTML=list.length?list.map(o=>`<div class="line"><div class="row"><b>অর্ডার #${esc(o.id)}</b><span class="badge ${o.received?'good':''}">${esc(o.received?'ক্রেতা রিসিভ করেছেন':o.status)}</span></div><div class="small">${new Date(o.created_at).toLocaleString('bn-BD')}</div><p>${(o.items||[]).map(p=>esc(p.product_name)+' × '+p.quantity+' '+esc(p.unit)).join(', ')}</p><b>${taka(o.total)}</b>${o.status==='ডেলিভারি পাঠানো হয়েছে'&&!o.received?`<button class="btn primary" style="margin-top:9px" onclick="receiveOrder('${esc(String(o.id))}','${esc(phone)}')">আমি রিসিভ করেছি</button>`:''}</div>`).join(''):'<p class="muted">এই নম্বরে কোনো অর্ডার পাওয়া যায়নি।</p>'}
+async function receiveOrder(id,phone){const {data,error}=await sbClient.rpc('confirm_order_received',{p_order_id:id,p_phone:phone});if(error){console.error(error);return toast('রিসিভ নিশ্চিত হয়নি: '+error.message)}if(!data)return toast('অর্ডারটি পাওয়া যায়নি অথবা এখনো পাঠানো হয়নি');toast('রিসিভ নিশ্চিত হয়েছে');trackOrders()}
+async function login(){const email=$('adminEmail').value.trim(),password=$('adminPassword').value;if(!email||!password)return toast('ইমেইল ও পাসওয়ার্ড দিন');const {data,error}=await sbClient.auth.signInWithPassword({email,password});if(error){console.error(error);return toast('লগইন হয়নি: '+error.message)}const {data:admin,error:adminError}=await sbClient.from('admin_users').select('user_id').eq('user_id',data.user.id).maybeSingle();if(adminError||!admin){await sbClient.auth.signOut();return toast('অ্যাডমিন যাচাই হয়নি: '+(adminError?.message||'এই User ID admin_users-এ নেই'))}logged=true;$('loginPanel').classList.add('hidden');$('dashboard').classList.remove('hidden');await loadCloudProducts();await renderAdmin();toast('নিরাপদ লগইন সফল হয়েছে')}
+async function logout(){await sbClient.auth.signOut();logged=false;$('dashboard').classList.add('hidden');$('loginPanel').classList.remove('hidden');$('adminPassword').value=''}
+async function saveProduct(){if(!logged)return toast('আগে অ্যাডমিন হিসেবে লগইন করুন');const name=$('pName').value.trim(),price=Number($('pPrice').value),file=$('pImage').files[0];if(!name||$('pPrice').value===''||!Number.isFinite(price)||price<0)return toast('পণ্যের নাম ও সঠিক দাম দিন');const old=db.products.find(p=>p.name.toLowerCase()===name.toLowerCase());const persist=async image=>{const row={name,category:$('pCat').value,price,unit:$('pUnit').value,image_url:image||old?.image||null,icon:old?.emoji||'🥬',is_active:true,active:true};let result;if(old)result=await sbClient.from('products').update(row).eq('id',old.id).select().single();else result=await sbClient.from('products').insert(row).select().single();if(result.error){console.error(result.error);return toast('পণ্য সেভ হয়নি: '+result.error.message)}await loadCloudProducts();await renderAdmin();['pName','pPrice','pImage'].forEach(id=>$(id).value='');toast(old?'পণ্যের দাম/তথ্য অনলাইনে আপডেট হয়েছে':'নতুন পণ্য অনলাইনে সেভ হয়েছে')};if(file){if(!file.type.startsWith('image/'))return toast('শুধু ছবি নির্বাচন করুন');const reader=new FileReader();reader.onerror=()=>toast('ছবি পড়া যায়নি');reader.onload=()=>{const img=new Image();img.onerror=()=>toast('ছবি খোলা যায়নি');img.onload=()=>{const scale=Math.min(1,700/Math.max(img.width,img.height));const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.width*scale));canvas.height=Math.max(1,Math.round(img.height*scale));canvas.getContext('2d').drawImage(img,0,0,canvas.width,canvas.height);persist(canvas.toDataURL('image/jpeg',0.62))};img.src=reader.result};reader.readAsDataURL(file)}else await persist(null)}
+async function seedStarterCatalog(){
+  if(!logged)return toast('আগে দোকানদার হিসেবে লগইন করুন');
+  const btn=document.querySelector('button[onclick="seedStarterCatalog()"]');if(btn){btn.disabled=true;btn.textContent='পণ্য যোগ হচ্ছে...'}
+  try{
+    const {data:existing,error:readError}=await sbClient.from('products').select('name');
+    if(readError)throw readError;
+    const names=new Set((existing||[]).map(x=>String(x.name).trim().toLocaleLowerCase('bn')));
+    const missing=starterCatalog.filter(p=>!names.has(p.name.trim().toLocaleLowerCase('bn')));
+    if(!missing.length){toast('প্রাথমিক তালিকার সব পণ্য আগে থেকেই আছে');return}
+    const rows=missing.map(p=>({name:p.name,category:p.category,price:p.price,unit:p.unit,icon:p.icon,image_url:null,is_active:true,active:true}));
+    const {error}=await sbClient.from('products').insert(rows);
+    if(error)throw error;
+    await loadCloudProducts();await renderAdmin();toast(missing.length+'টি পণ্য আনুমানিক দামসহ অনলাইনে যোগ হয়েছে');
+  }catch(e){console.error(e);toast('পণ্য যোগ হয়নি: '+(e.message||e))}
+  finally{if(btn){btn.disabled=false;btn.textContent='📥 সব প্রাথমিক পণ্য অনলাইনে যোগ করুন'}}
+}
+async function loadCloudProducts(){const {data,error}=await sbClient.from('products').select('*').eq('is_active',true).order('created_at',{ascending:false});if(error){console.error(error);toast('অনলাইন পণ্য লোড হয়নি: '+error.message);return}db.products=(data||[]).map(p=>({id:p.id,name:p.name,cat:p.category||'সবজি',price:Number(p.price),unit:p.unit||'কেজি',image:p.image_url||null,emoji:p.icon||'🥬'}));save();renderProducts()}
+async function loadShopSettings(){const {data,error}=await sbClient.from('shop_settings').select('*').eq('id',1).maybeSingle();if(error){console.warn('Shop settings:',error.message);return}if(data){db.shop=data.shop_name;db.address=data.shop_address;save();renderHeader()}}
+async function saveShop(){if(!logged)return;const shop_name=$('shopNameInput').value.trim()||db.shop;const shop_address=$('shopAddressInput').value.trim()||db.address;const {error}=await sbClient.from('shop_settings').upsert({id:1,shop_name,shop_address,updated_at:new Date().toISOString()});if(error)return toast('দোকানের তথ্য অনলাইনে সেভ হয়নি: '+error.message);db.shop=shop_name;db.address=shop_address;save();renderHeader();toast('দোকানের তথ্য অনলাইনে সেভ হয়েছে')}
+function renderHeader(){$('brand').textContent='🥬 '+db.shop;$('shopTag').textContent=db.address}
+function editProduct(id){const p=db.products.find(x=>String(x.id)===String(id));if(!p)return toast('পণ্য পাওয়া যায়নি');$('pName').value=p.name;$('pCat').value=p.cat;$('pPrice').value=p.price;$('pUnit').value=p.unit;$('pImage').value='';$('pName').scrollIntoView({behavior:'smooth',block:'center'});$('pPrice').focus();toast('নতুন দাম লিখে পণ্য সংরক্ষণ চাপুন') }
+async function deleteProduct(id){if(!confirm('পণ্যটি তালিকা থেকে সরাবেন?'))return;const {error}=await sbClient.from('products').update({is_active:false,active:false}).eq('id',id);if(error)return toast('মুছতে সমস্যা: '+error.message);await loadCloudProducts();await renderAdmin();toast('পণ্য তালিকা থেকে সরানো হয়েছে')}
+async function moveDelivery(id){const {error}=await sbClient.from('orders').update({status:'ডেলিভারি তালিকায়'}).eq('id',id);if(error)return toast('আপডেট হয়নি: '+error.message);await renderAdmin();toast('ডেলিভারি তালিকায় পাঠানো হয়েছে')}
+async function markSent(id){const {error}=await sbClient.from('orders').update({status:'ডেলিভারি পাঠানো হয়েছে'}).eq('id',id);if(error)return toast('আপডেট হয়নি: '+error.message);await renderAdmin();toast('পণ্য পাঠানো হয়েছে')}
+
+function localDateValue(){const d=new Date();const y=d.getFullYear(),m=String(d.getMonth()+1).padStart(2,'0'),day=String(d.getDate()).padStart(2,'0');return `${y}-${m}-${day}`}
+function copyDueSql(){const el=$('dueSql');el.focus();el.select();try{document.execCommand('copy');toast('বাকি হিসাবের SQL কপি হয়েছে')}catch(e){toast('SQL বক্স থেকে কপি করুন')}}
+async function addDuePayment(orderId){
+  if(!logged)return toast('আগে দোকানদার হিসেবে লগইন করুন');
+  const amountEl=$('dueAmount_'+orderId),dateEl=$('dueDate_'+orderId),noteEl=$('dueNote_'+orderId);
+  const amount=Number(amountEl?.value),payment_date=dateEl?.value;
+  if(!Number.isFinite(amount)||amount<=0)return toast('জমার সঠিক টাকা লিখুন');
+  if(!payment_date)return toast('জমার তারিখ দিন');
+  const order=db.orders.find(o=>String(o.id)===String(orderId));
+  if(!order)return toast('অর্ডার পাওয়া যায়নি');
+  const already=(db.duePayments||[]).filter(p=>String(p.order_id)===String(orderId)).reduce((sum,p)=>sum+Number(p.amount||0),0);
+  const remaining=Math.max(0,Number(order.total)-already);
+  if(amount>remaining+0.001)return toast('জমার টাকা অবশিষ্ট টাকার বেশি হতে পারবে না');
+  const {error}=await sbClient.from('due_payments').insert({order_id:orderId,amount,payment_date,note:noteEl?.value.trim()||null});
+  if(error){console.error(error);return toast('জমা সেভ হয়নি: '+error.message+' — SQL সেটআপ হয়েছে কি না দেখুন')}
+  toast('বাকি জমা সফলভাবে সেভ হয়েছে');
+  await renderAdmin();
+}
+function filterDueLedgerView(){
+  const q=String($('duePhoneSearch')?.value||'').replace(/[^0-9]/g,'');
+  const cards=[...document.querySelectorAll('#dueOrders .due-card')];
+  let shown=0;
+  cards.forEach(card=>{
+    const phone=String(card.dataset.phone||'').replace(/[^0-9]/g,'');
+    const match=!q||phone.includes(q);
+    card.classList.toggle('hidden',!match);
+    if(match)shown++;
+  });
+  const empty=$('dueSearchEmpty');
+  if(empty)empty.classList.toggle('hidden',shown!==0);
+}
+function clearDuePhoneSearch(){ $('duePhoneSearch').value=''; filterDueLedgerView(); }
+async function renderDueLedger(orders){
+  const dueOrders=orders.filter(o=>o.payment==='বাকি চাই');
+  if(!dueOrders.length){$('dueOrders').innerHTML='<p class="muted">এখনো কোনো বাকি অর্ডার নেই।</p>';db.duePayments=[];return}
+  const ids=dueOrders.map(o=>o.id);
+  const {data:payments,error}=await sbClient.from('due_payments').select('id,order_id,amount,payment_date,note,created_at').in('order_id',ids).order('payment_date',{ascending:false});
+  if(error){
+    console.error(error);
+    $('dueOrders').innerHTML='<p class="muted">বাকি জমার হিসাব চালু হয়নি। নিচের “একবারের সেটআপ” অংশের SQL Supabase SQL Editor-এ Run করুন। তারপর আবার লগইন/রিফ্রেশ করুন।</p>';
+    db.duePayments=[];
+    return;
+  }
+  db.duePayments=payments||[];
+  const outstanding=dueOrders.map(o=>{
+    const history=db.duePayments.filter(p=>String(p.order_id)===String(o.id));
+    const deposited=history.reduce((sum,p)=>sum+Number(p.amount||0),0);
+    return {...o,history,deposited,remaining:Math.max(0,Number(o.total)-deposited)};
+  }).filter(o=>o.remaining>0.001);
+  $('dueCount').textContent=outstanding.length.toLocaleString('bn-BD');
+  $('dueOrders').innerHTML=outstanding.length?outstanding.map(o=>`<div class="due-card" data-phone="${esc(o.phone||'')}">
+    <div class="row"><b>${esc(o.name)} · অর্ডার #${esc(String(o.id).slice(0,8))}</b><span class="badge">${esc(o.phone||'')}</span></div>
+    <div class="small">অর্ডারের তারিখ: ${esc(o.date)} · ${esc(o.house||'')} ${esc(o.plot||'')}</div>
+    <div class="due-metrics">
+      <div class="due-metric"><span class="small">মোট বাকি</span><b>${taka(o.total)}</b></div>
+      <div class="due-metric"><span class="small">জমা</span><b>${taka(o.deposited)}</b></div>
+      <div class="due-metric"><span class="small">অবশিষ্ট</span><b>${taka(o.remaining)}</b></div>
+    </div>
+    ${o.history.length?'<div class="due-history"><b>জমার ইতিহাস:</b>'+o.history.map(p=>`<div>📅 ${new Date(p.payment_date+'T00:00:00').toLocaleDateString('bn-BD')} — ${taka(p.amount)}${p.note?' · '+esc(p.note):''}</div>`).join('')+'</div>':'<div class="due-history">এখনো কোনো টাকা জমা হয়নি।</div>'}
+    <div class="due-form">
+      <div><label>জমার টাকা (৳)</label><input id="dueAmount_${esc(String(o.id))}" type="number" min="0.01" max="${o.remaining}" step="0.01" placeholder="যেমন ৫০০"></div>
+      <div><label>জমার তারিখ</label><input id="dueDate_${esc(String(o.id))}" type="date" value="${localDateValue()}"></div>
+      <div class="full"><label>মন্তব্য (ঐচ্ছিক)</label><input id="dueNote_${esc(String(o.id))}" placeholder="যেমন নগদ জমা"></div>
+      <div class="full"><button class="btn primary" onclick="addDuePayment('${esc(String(o.id))}')">জমা সংরক্ষণ</button></div>
+    </div>
+  </div>`).join('')+'<p id="dueSearchEmpty" class="muted hidden">এই মোবাইল নম্বরে কোনো বাকি পাওয়া যায়নি।</p>':'<p class="muted">সব বাকি পরিশোধ হয়ে গেছে।</p>';
+  filterDueLedgerView();
+}
+
+async function renderAdmin(){if(!logged)return;$('shopNameInput').value=db.shop;$('shopAddressInput').value=db.address;const {data:rows,error}=await sbClient.from('orders').select('*, order_items(*)').order('created_at',{ascending:false});if(error){console.error(error);return toast('অর্ডার লোড হয়নি: '+error.message)}db.orders=(rows||[]).map(o=>({id:o.id,name:o.customer_name,phone:o.phone||o.customer_phone,house:o.house,plot:o.plot,floor:o.floor,payment:o.payment,note:o.note,total:Number(o.total),status:o.status,received:!!o.received,paid:o.payment==='পরিশোধ',date:new Date(o.created_at).toLocaleString('bn-BD'),items:(o.order_items||[]).map(i=>({name:i.product_name,qty:Number(i.quantity),unit:i.unit,price:Number(i.price)}))}));save();const fresh=db.orders.filter(o=>o.status==='নতুন অর্ডার');const delivery=db.orders.filter(o=>!o.received&&['ডেলিভারি তালিকায়','ডেলিভারি পাঠানো হয়েছে'].includes(o.status));const dues=db.orders.filter(o=>o.payment==='বাকি চাই'&&!o.paid);$('newCount').textContent=fresh.length.toLocaleString('bn-BD');$('deliveryCount').textContent=delivery.length.toLocaleString('bn-BD');$('dueCount').textContent=dues.length.toLocaleString('bn-BD');$('receivedCount').textContent=db.orders.filter(o=>o.received).length.toLocaleString('bn-BD');$('productManage').innerHTML='<h3>বর্তমান পণ্য — ডানে-বামে সরিয়ে দেখুন</h3><div class="small" style="color:#147a45;font-weight:700;margin:4px 0 8px">পণ্য দেখতে ডানে-বামে আঙুল দিয়ে সরান ⟷</div><div id="productManageShelf">'+db.products.map(p=>`<div class="manage-product"><b>${esc(p.name)}</b><div class="price">${taka(p.price)} / ${esc(p.unit)}</div><div class="manage-actions"><button class="btn secondary" onclick="editProduct('${esc(String(p.id))}')">সম্পাদনা</button><button class="btn danger" onclick="deleteProduct('${esc(String(p.id))}')">সরান</button></div></div>`).join('')+'</div>';$('newOrders').innerHTML=fresh.map(orderCard).join('')||'<p class="muted">নতুন অর্ডার নেই।</p>';$('deliveryOrders').innerHTML=delivery.map(o=>orderCard(o,true)).join('')||'<p class="muted">ডেলিভারি অর্ডার নেই।</p>';await renderDueLedger(dues)}
+function orderCard(o,isDelivery=false){return `<div class="line"><div class="row"><b>অর্ডার #${esc(o.id)} · ${esc(o.name)}</b><span class="badge">${esc(o.status)}</span></div><div class="small">${esc(o.phone)} · ${esc(o.date)}</div><div class="small">ঠিকানা: ${esc(o.house)} · প্লট ${esc(o.plot)} · ${esc(o.floor)}</div><p>${o.items.map(p=>esc(p.name)+' × '+p.qty+' '+esc(p.unit)).join(', ')}</p><div class="row"><b>${taka(o.total)} · ${esc(o.payment)}</b>${!isDelivery?`<button class="btn primary" style="width:auto" onclick="moveDelivery('${esc(String(o.id))}')">ডেলিভারি লিস্টে পাঠান</button>`:''}</div>${o.note?'<div class="small">নির্দেশনা: '+esc(o.note)+'</div>':''}${isDelivery&&o.status==='ডেলিভারি তালিকায়'?`<button class="btn blue" style="margin-top:8px" onclick="markSent('${esc(String(o.id))}')">পণ্য পাঠানো হয়েছে</button>`:''}${o.received?'<span class="badge good">ক্রেতা রিসিভ করেছেন</span>':''}</div>`}
+function validOrderUUID(id){return typeof id==='string' && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id)}
+async function moveDelivery(id){
+  if(!validOrderUUID(id))return toast('অর্ডার নম্বর সঠিক UUID নয়; তালিকা রিফ্রেশ করুন');
+  const {data,error}=await sbClient.from('orders').update({status:'ডেলিভারি তালিকায়'}).eq('id',id).select('id').maybeSingle();
+  if(error){console.error(error);return toast('ডেলিভারি তালিকায় পাঠানো যায়নি: '+error.message)}
+  if(!data)return toast('অর্ডার পাওয়া যায়নি বা আপডেটের অনুমতি নেই');
+  await renderAdmin();toast('অর্ডার ডেলিভারি তালিকায় যোগ হয়েছে');
+}
+async function markSent(id){
+  if(!validOrderUUID(id))return toast('অর্ডার নম্বর সঠিক UUID নয়; তালিকা রিফ্রেশ করুন');
+  const {data,error}=await sbClient.from('orders').update({status:'ডেলিভারি পাঠানো হয়েছে'}).eq('id',id).eq('status','ডেলিভারি তালিকায়').select('id').maybeSingle();
+  if(error){console.error(error);return toast('পাঠানোর অবস্থা আপডেট হয়নি: '+error.message)}
+  if(!data)return toast('অর্ডার পাওয়া যায়নি বা এটি এখন ডেলিভারি তালিকায় নেই');
+  await renderAdmin();toast('পণ্য পাঠানো হয়েছে হিসেবে সেভ হয়েছে');
+}
+async function paid(id){return toast('এখন বাকি তালিকার জমা ঘর ব্যবহার করে টাকা জমা দিন')}
+function backup(){const a=document.createElement('a'),u=URL.createObjectURL(new Blob([JSON.stringify(db)],{type:'application/json'}));a.href=u;a.download='fresh-vegetable-backup.json';a.click();URL.revokeObjectURL(u)}
+function restore(e){const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{try{const d=JSON.parse(r.result);if(!d.products||!d.orders)throw 0;db=d;save();renderHeader();renderProducts();toast('লোকাল ব্যাকআপ ফেরত আনা হয়েছে')}catch{toast('ব্যাকআপ ফাইল সঠিক নয়')}};r.readAsText(f)}
+$('dueSql').value='-- আলমগীর হোসেন সিটি ফ্রেশ শাকসবজি: বাকি জমার হিসাব\ncreate table if not exists public.due_payments (\n  id bigint generated by default as identity primary key,\n  order_id uuid not null references public.orders(id) on delete cascade,\n  amount numeric(12,2) not null check (amount > 0),\n  payment_date date not null default current_date,\n  note text,\n  created_at timestamptz not null default now()\n);\n\nalter table public.due_payments enable row level security;\n\ndrop policy if exists "Admins can read due payments" on public.due_payments;\ncreate policy "Admins can read due payments"\non public.due_payments for select to authenticated\nusing (exists (\n  select 1 from public.admin_users au where au.user_id = auth.uid()\n));\n\ndrop policy if exists "Admins can add due payments" on public.due_payments;\ncreate policy "Admins can add due payments"\non public.due_payments for insert to authenticated\nwith check (exists (\n  select 1 from public.admin_users au where au.user_id = auth.uid()\n));\n\ngrant select, insert on public.due_payments to authenticated;\ngrant usage, select on sequence public.due_payments_id_seq to authenticated;\n';
+$('today').textContent=new Date().toLocaleDateString('bn-BD',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
+renderHeader();renderCart();renderProducts();
+loadCloudProducts();loadShopSettings();
+realtimeChannel=sbClient.channel('fresh-shop-live').on('postgres_changes',{event:'*',schema:'public',table:'products'},()=>loadCloudProducts()).on('postgres_changes',{event:'*',schema:'public',table:'orders'},()=>{if(logged)renderAdmin()}).subscribe();
+sbClient.auth.getSession().then(async({data})=>{if(data.session){$('adminEmail').value=data.session.user.email||'';const {data:admin}=await sbClient.from('admin_users').select('user_id').eq('user_id',data.session.user.id).maybeSingle();if(admin){logged=true;$('loginPanel').classList.add('hidden');$('dashboard').classList.remove('hidden');await loadCloudProducts();await renderAdmin()}}});
+</script></body></html>
